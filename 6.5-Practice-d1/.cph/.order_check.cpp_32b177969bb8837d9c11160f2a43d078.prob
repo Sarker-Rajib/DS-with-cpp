@@ -1,0 +1,1 @@
+{"name":"Local: order_check","url":"g:\\02.Phitron\\03.DSA\\6.5-Practice-d1\\order_check.cpp","tests":[{"id":1686771805856,"input":"1 5 6 8 9 -1","output":"YES"},{"id":1686771812759,"input":"2 4 6 5 8 4 -1","output":"NO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\02.Phitron\\03.DSA\\6.5-Practice-d1\\order_check.cpp","group":"local","local":true}

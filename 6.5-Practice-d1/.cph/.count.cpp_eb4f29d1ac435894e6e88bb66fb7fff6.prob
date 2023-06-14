@@ -1,0 +1,1 @@
+{"name":"Local: count","url":"g:\\02.Phitron\\03.DSA\\6.5-Practice-d1\\count.cpp","tests":[{"id":1686768906566,"input":"2 1 5 3 4 8 9 -1","output":"7"},{"id":1686768922651,"input":"5 1 4 5 -1","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\02.Phitron\\03.DSA\\6.5-Practice-d1\\count.cpp","group":"local","local":true}

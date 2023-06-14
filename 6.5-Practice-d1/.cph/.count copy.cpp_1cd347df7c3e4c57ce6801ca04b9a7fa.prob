@@ -1,0 +1,1 @@
+{"name":"Local: count copy","url":"g:\\02.Phitron\\03.DSA\\6.5-Practice-d1\\count copy.cpp","tests":[{"id":1686769120720,"input":"5 4 8 6 2 1 -1","output":"NO"},{"id":1686769126099,"input":"2 4 5 6 7 4 -1","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\02.Phitron\\03.DSA\\6.5-Practice-d1\\count copy.cpp","group":"local","local":true}
