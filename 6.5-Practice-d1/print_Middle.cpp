@@ -49,15 +49,35 @@ int size(Node *head)
 void printMiddlle(Node *head, int length)
 {
     Node *tmp = head;
-    int length;
+    int mid = length / 2;
 
-    if (length % 2 != 0)
-    {
-        length = length / 2;
-    }
+    int inde = 0;
 
-    for (int i = 0; tmp != NULL; i++)
+    while (tmp != NULL)
     {
+
+        if (length % 2 == 1)
+        {
+            if (inde == mid)
+            {
+                cout << tmp->value;
+            }
+        }
+
+        if (length % 2 == 0)
+        {
+            if (inde == mid - 1)
+            {
+                cout << tmp->value << " ";
+            }
+
+            if (inde == mid)
+            {
+                cout << tmp->value;
+            }
+        }
+        inde++;
+        tmp = tmp->next;
     }
 }
 
