@@ -1,0 +1,1 @@
+{"name":"Local: sort","url":"g:\\02.Phitron\\03.DSA\\7.5-Practice-2\\sort.cpp","tests":[{"id":1686845377973,"input":"2 4 1 3 5 4 2 5 -1","output":"1 2 2 3 4 4 5 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"g:\\02.Phitron\\03.DSA\\7.5-Practice-2\\sort.cpp","group":"local","local":true}
