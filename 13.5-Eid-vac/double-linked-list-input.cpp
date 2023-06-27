@@ -7,6 +7,7 @@ public:
     int val;
     Node *next;
     Node *prev;
+
     Node(int val)
     {
         this->val = val;
@@ -65,6 +66,6 @@ int main()
     }
 
     print_normal(head);
-    print_reverse(tail);
+    // print_reverse(tail);
     return 0;
 }
