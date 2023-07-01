@@ -49,20 +49,20 @@ int main()
         {
             insertValue(head, tail, v);
         }
-    }
+    };
 
     while (head != NULL)
     {
         cout << head->val << " ";
         head = head->next;
-    }
+    };
     cout << endl;
 
     while (tail != NULL)
     {
         cout << tail->val << " ";
         tail = tail->prev;
-    }
+    };
 
     // __________
     return 0;
