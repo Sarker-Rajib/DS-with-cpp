@@ -16,11 +16,11 @@ public:
     }
 };
 
-class myListStack
+class myStackList
 {
 public:
-    Node *head = NULL;
-    Node *tail = NULL;
+    Node *head;
+    Node *tail;
     int sz = 0;
 
     void push(int val)
@@ -83,7 +83,7 @@ public:
 
 int main()
 {
-    myListStack st;
+    myStackList st;
 
     int n;
     cin >> n;
@@ -101,6 +101,6 @@ int main()
         st.pop();
     }
 
-    // _____
+    // __________
     return 0;
 }
