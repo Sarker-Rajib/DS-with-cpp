@@ -7,7 +7,6 @@ public:
     int val;
     Node *next;
     Node *prev;
-
     Node(int val)
     {
         this->val = val;
@@ -16,11 +15,11 @@ public:
     }
 };
 
-class myStackList
+class myListStack
 {
 public:
-    Node *head;
-    Node *tail;
+    Node *head = NULL;
+    Node *tail = NULL;
     int sz = 0;
 
     void push(int val)
@@ -35,9 +34,9 @@ public:
             return;
         }
 
-        newNode->prev = tail;
         tail->next = newNode;
-        tail = tail->next;
+        newNode->prev = tail;
+        tail = newNode;
     }
 
     void pop()
@@ -83,22 +82,53 @@ public:
 
 int main()
 {
-    myStackList st;
+    myListStack st1;
+    myListStack st2;
 
-    int n;
-    cin >> n;
+    int n1;
+    cin >> n1;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n1; i++)
     {
         int x;
         cin >> x;
-        st.push(x);
+        st1.push(x);
     }
 
-    while (!st.empty())
+    int n2;
+    cin >> n2;
+
+    for (int i = 0; i < n2; i++)
     {
-        cout << st.top() << endl;
-        st.pop();
+        int x;
+        cin >> x;
+        st2.push(x);
+    }
+
+    if (st1.size() != st2.size())
+    {
+        cout << "No";
+    }
+    else
+    {
+        while (!st1.empty())
+        {
+            if (st1.top() == st2.top())
+            {
+                st1.pop();
+                st2.pop();
+
+                if (st1.size() == 0)
+                {
+                    cout << "YES";
+                }
+            }
+            else
+            {
+                cout << "NO";
+                break;
+            }
+        }
     }
 
     // __________
