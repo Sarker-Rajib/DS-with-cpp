@@ -12,23 +12,28 @@ int main()
         string aLine;
         getline(cin, aLine);
 
-        map<string, int> words;
+        map<string, int> wards;
 
         stringstream ss(aLine);
-        string word;
+        string ward;
 
-        string maxCountedWord;
-        int maxCountForWord = 0;
+        string maxCountedWard;
+        int maxCountForWard = 0;
 
-        while (ss >> word)
+        while (ss >> ward)
         {
-            words[word]++;
+            wards[ward]++;
+
+            if (wards[ward] > maxCountForWard)
+            {
+                maxCountForWard = wards[ward];
+                maxCountedWard = ward;
+            }
         }
 
-        // cout << endl;
-        cout << maxCountedWord << " " << maxCountForWord << endl;
+        cout << maxCountedWard << " " << maxCountForWard << endl;
     }
 
-    // _____
+    // __________
     return 0;
 }
